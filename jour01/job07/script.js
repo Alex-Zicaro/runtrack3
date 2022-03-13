@@ -1,17 +1,51 @@
-function jourtravaille(date){
-const jourFerie = ["test","coco","choco","bibi","lrl","aekak","&eze"]
+function jourtravaille(date) {
+    var monthName = [
+        "janvier",
+        "fevrier",
+        "mars",
+        "avril",
+        "mai",
+        "juin",
+        "juillet",
+        "aout",
+        "septembre",
+        "octobre",
+        "november",
+        "decembre",
+    ];
 
-const nombreDeJourFerie = jourFerie.length
+    const jourFerie = [
+        "2020-01-01",
+        "2020-04-13",
+        "2020-05-01",
+        "2020-05-08",
+        "2020-05-21",
+        "2020-06-01",
+        "2020-07-14",
+        "2020-09-15",
+        "2020-11-01",
+        "2020-11-11",
+        "2020-12-25",
+    ];
 
-for(i = 0 ; i < nombreDeJourFerie ; i++)
-if(date == jourFerie[i]){
-    console.log(date + ' bingo')
-}
-if(i % 4 == 0 || i % 5 == 0){
-    console.log(date + " est un week-end")
-}
-}
-jourtravaille('tajin')
-console.log(4/4)
+    const date = new Date(date);
 
-// getTime & getDay & new date
+    const nombreDeJourFerie = jourFerie.length;
+
+    for (i = 0; i <= 11; i++) {
+        var dateJourFerie = jourFerie[i];
+        
+        if (date.getTime() == dateJourFerie.getTime()) {
+            console.log(
+                date.getDate() +
+                " " +
+                monthName[date.getMonth()] +
+                " " +
+                date.getTime() +
+                " Est un jour férié"
+            );
+
+            break;
+        }
+    }
+}
