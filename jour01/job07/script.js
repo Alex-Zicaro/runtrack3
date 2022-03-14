@@ -1,18 +1,4 @@
-function jourtravaille(date) {
-    var monthName = [
-        "janvier",
-        "fevrier",
-        "mars",
-        "avril",
-        "mai",
-        "juin",
-        "juillet",
-        "aout",
-        "septembre",
-        "octobre",
-        "november",
-        "decembre",
-    ];
+function jourtravaille(dates) {
 
     const jourFerie = [
         "2020-01-01",
@@ -28,24 +14,27 @@ function jourtravaille(date) {
         "2020-12-25",
     ];
 
-    const date = new Date(date);
+    var date = new Date(dates);
 
-    const nombreDeJourFerie = jourFerie.length;
 
-    for (i = 0; i <= 11; i++) {
-        var dateJourFerie = jourFerie[i];
+    const option = { weekday: 'long' , year:'numeric' , month:'long' , day:'numeric' }
+    var dateAffiche = date.toLocaleDateString('fr-FR', option)
+
         
-        if (date.getTime() == dateJourFerie.getTime()) {
-            console.log(
-                date.getDate() +
-                " " +
-                monthName[date.getMonth()] +
-                " " +
-                date.getTime() +
-                " Est un jour férié"
-            );
+        if (jourFerie.includes(dates) == true) {
+            
+                console.log("Le " + dateAffiche + " est un jour ferié")
+        }
+        
 
-            break;
+        else if (date.getDay() == 0 || date.getDay() == 6) {
+
+            console.log("Le " + dateAffiche + " est le week-end")
+        }
+        else {
+            console.log("Le " + dateAffiche + " il faut travailler")
         }
     }
-}
+            
+        jourtravaille("2020-12-25")
+
