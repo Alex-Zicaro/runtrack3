@@ -8,6 +8,8 @@
     <script src="script.js" Defer></script>
 </head>
 <body>
-    
+    <article id="citation">La vie a beaucoup plus d’imagination que nous.
+</article>
+<button id="id">couscous</button>
 </body>
 </html>

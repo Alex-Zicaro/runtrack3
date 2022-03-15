@@ -8,6 +8,9 @@
     <script src="script.js" Defer></script>
 </head>
 <body>
+    <p id="compteur">0</p>
+    <button id="button">claquette-chaussette</button>
+    
     
 </body>
 </html>

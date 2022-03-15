@@ -8,6 +8,7 @@
     <script src="script.js" Defer></script>
 </head>
 <body>
-    
+    <article>L'important n'est pas la chute, mais l'atterrissage.</article>
+    <button id="">chaussure à la fraise</button>
 </body>
 </html>

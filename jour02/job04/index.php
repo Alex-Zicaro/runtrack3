@@ -8,6 +8,6 @@
     <script src="script.js" Defer></script>
 </head>
 <body>
-    
+    <textarea name="" id="keylogger" cols="30" rows="10"></textarea>
 </body>
 </html>
