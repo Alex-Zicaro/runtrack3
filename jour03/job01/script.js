@@ -4,7 +4,15 @@ monétaire. Le # de twitter est une bonne I D. Il faudra faire le point avec la
 classe pour cacher cet élément. ”.
 En dessous faire un bouton qui servira à cacher tout l’élément html. */
 
-function sommeNombresPremiers(int , intTwo){
+'use strict';
 
-    if(int %  == 0 && int)
-}
+$('#button').click(function (){
+
+    $('#p').append('le $ est un bon élément monétaire. Le # de twitter est une bonne ID. Il faudra faire le point avec la classe pour cacher cet élément. ')
+})
+
+
+$('#cache').click(function(){
+
+    $('#p').empty()
+})
