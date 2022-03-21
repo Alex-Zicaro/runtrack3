@@ -15,4 +15,10 @@ body{
     body{
         background-color: #275fa0;
     }
+
+@media (max-width:1279px){
+    body{
+        background-color: #ffffff;
+    }
+}
 }
