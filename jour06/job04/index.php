@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,15 +7,14 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-
 <body>
-
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-
-
+    <header>
+        <div>
+            <a href="">Accueil</a>
+            <a href="">Présentation</a>
+            <a href="">Contact</a>
+        </div>
+    </header>
+    
 </body>
-
 </html>
